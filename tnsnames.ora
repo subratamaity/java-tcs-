@@ -1,0 +1,56 @@
+ORCLILP =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = INGNRGPILPHP01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SID = ORCLILP)
+    )
+  )
+
+ORCILP =
+        (DESCRIPTION =
+                (ADDRESS = (PROTOCOL = TCP)(HOST = 172.26.132.40)(PORT = 1521))
+                (CONNECT_DATA =
+                        (SERVER = DEDICATED)
+                        (SERVICE_NAME = orclilp)
+                )
+        )
+EXTPROC_CONNECTION_DATA =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = IPC)(KEY = EXTPROC_FOR_XE))
+    )
+    (CONNECT_DATA =
+      (SID = PLSExtProc)
+      (PRESENTATION = RO)
+    )
+  )
+ENTSOLDB =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = INGNRILPBOX01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SID = ENTSOLDB)
+    )
+  )
+
+ORCLILP =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = INGNRGPILPHP01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SID = ORCLILP)
+    )
+  ) 
+
+XE =
+        (DESCRIPTION =
+                (ADDRESS = (PROTOCOL = TCP)(HOST = 172.26.132.40)(PORT = 1521))
+                (CONNECT_DATA =
+                        (SERVER = DEDICATED)
+                        (SERVICE_NAME = XE)
+                )
+        )
